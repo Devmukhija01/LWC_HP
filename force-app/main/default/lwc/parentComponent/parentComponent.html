@@ -1,7 +1,11 @@
 <template>
-    <lightning-card>
-        <lightning-input type="text" onchange={handlechange} placeholder="Enter Your Name" style="padding:20px"></lightning-input>
-        <lightning-button label="Submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Enter a message" value={message} onchange={handleInputChange}></lightning-input>
+            <lightning-button label="Send Message" onclick={sendMessage} class="slds-m-top_small"></lightning-button>
+        </div>
+        
+        <!--<c-child-component message={message}></c-child-component>-->
+        <c-child-component message={message}></c-child-component>
     </lightning-card>
-    <c-child-component name={name}></c-child-component>
 </template>
