@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="User Input Example">
+        <div class="slds-a-around_medium" style="padding: 20px;">
+            <lightning-input type="text" placeholder="Enter Username" onchange={handleNameChange} value={userInfo.name}></lightning-input>
+            <lightning-input type="phone" placeholder="Enter Phone No." onchange={handlePhoneChange} value={userInfo.phone}></lightning-input>
+            <lightning-input type="text" placeholder="Enter Address" onchange={handleAddressChange} value={userInfo.address}></lightning-input>
+            </div>
+            <div style="padding: 20px;">
+                <lightning-button label="Submit" title="Non-primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+                <p style="padding: 10px;"> Entered Username: {userInfo.name}</p>
+                <p style="padding: 10px;"> Entered Phone No: {userInfo.phone}</p>
+                <p style="padding: 10px;"> Entered Address: {userInfo.address}</p>
+            </div>
+    </lightning-card>
+</template>

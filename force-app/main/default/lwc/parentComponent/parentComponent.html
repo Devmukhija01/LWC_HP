@@ -1,0 +1,7 @@
+<template>
+    <lightning-card>
+        <lightning-input type="text" onchange={handlechange} placeholder="Enter Your Name" style="padding:20px"></lightning-input>
+        <lightning-button label="Submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+    <c-child-component name={name}></c-child-component>
+</template>
